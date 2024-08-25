@@ -1,0 +1,22 @@
+name: yolo-streamlit-env
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+  - matplotlib>=3.2.2
+  - numpy>=1.18.5
+  # - opencv-python-headless #  conda install fastai::opencv-python-headless 
+  - Pillow>=7.1.2
+  - PyYAML==6.0.1
+  - requests>=2.23.0
+  - scipy==1.13.0
+  - torchvision==0.15.2
+  - tqdm>=4.41.0
+  - safetensors==0.4.3
+  - ipython
+  - streamlit
+  - pip:
+      - ultralytics
