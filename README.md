@@ -65,7 +65,7 @@ The **yolo-streamlit** is a web-based application that leverages YOLOv8 and YOLO
 ## Project Structure
 
 ```
-object-recognition-dashboard/
+yolo-streamlit/
 │
 ├── app/
 │   └── main.py                # Main Streamlit application script
