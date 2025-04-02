@@ -18,13 +18,15 @@ def main():
     st.sidebar.title("Settings")
 
     # Select YOLO model version
-    model_src = st.sidebar.radio("Select YOLOv8 weight file", ["YOLOv8", "YOLOv10"])
+    model_src = st.sidebar.radio("Select YOLOv8 weight file", ["YOLOv8", "YOLOv10", "YOLOv11"])
 
     # Set model path based on user selection
     if model_src == "YOLOv8":
         cfg_model_path = '../models/yolov8n.pt'
-    else:
+    elif model_src == "YOLOv10":
         cfg_model_path = '../models/yolov10n.pt'
+    else:
+        cfg_model_path = '../models/yolo11n.pt'
 
     st.sidebar.text(cfg_model_path.split("/")[-1])
     st.sidebar.markdown("---")
